@@ -71,6 +71,7 @@ cat >>${NGINX_CONFIG_FILE} <<!EOF
 rtmp {
     server {
         listen 1935;
+        max_message 4M;
         chunk_size 4096;
 !EOF
 
